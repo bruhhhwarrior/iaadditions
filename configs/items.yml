@@ -20,4 +20,5 @@ items:
           name: minecraft:block.dispenser.launch
         play_emote:
           name: boogie_bomb
-          target: all
+          target: radius
+          target_radius: 5
