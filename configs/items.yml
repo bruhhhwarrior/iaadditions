@@ -1,0 +1,23 @@
+info:
+  namespace: iaadditions
+
+items:
+  boogie_bomb:
+    name: Boogie Bomb
+    material: SNOWBALL
+    graphics:
+      model: item/boogie_bomb
+    events:
+      item_hit_ground:
+        play_sound:
+          name: minecraft:block.dispenser.launch
+        play_emote:
+          name: boogie_bomb
+          target: radius
+          target_radius: 5
+      item_hit_entity:
+        play_sound:
+          name: minecraft:block.dispenser.launch
+        play_emote:
+          name: boogie_bomb
+          target: all

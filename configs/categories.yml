@@ -1,0 +1,13 @@
+info:
+  namespace: iaadditions
+
+categories:
+  iaadditions:
+    enabled: true
+    name: ItemsAdderAdditions 
+    icon: iaadditions:iaadditions_block
+    items:
+    - iaadditions:chair
+    - iaadditions:iaadditions_block
+    - iaadditions:stone_pebble_0
+    - iaadditions:boogie_bomb

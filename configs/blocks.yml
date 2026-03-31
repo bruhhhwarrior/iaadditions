@@ -1,0 +1,126 @@
+info:
+  namespace: iaadditions
+
+items:
+  stone_pebbles:
+    template: true
+    name: ""
+    graphics:
+      model: block/stone_pebble_0
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        drop_when_mined: FALSE
+        hardness: -1
+        sound:
+          place:
+            name: minecraft:block.stone.place
+            pitch: 1.1
+          break:
+            name: minecraft:block.stone.break
+            pitch: 1.1
+  stone_pebble_0: # Block that showcases the stackable behaviour.
+    variant_of: stone_pebbles
+    name: "Stone Pebble"
+    specific_properties:
+      block:
+        drop_when_mined: true
+    behaviours:
+      stackable:
+        items:
+        - iaadditions:stone_pebble_0
+        blocks:
+        - iaadditions:stone_pebble_1
+        - iaadditions:stone_pebble_2
+        - iaadditions:stone_pebble_3
+        - iaadditions:stone_pebble_4
+        sound:
+          name: minecraft:block.stone.place
+          pitch: 1.1
+  stone_pebble_1:
+    variant_of: stone_pebbles
+    graphics:
+      model: block/stone_pebble_1
+    events:
+      placed_block:
+        break:
+          drop_item:
+            item: stone_pebble_0
+            min_amount: 2
+            max_amount: 2
+            chance: 100
+  stone_pebble_2:
+    variant_of: stone_pebbles
+    graphics:
+      model: block/stone_pebble_2
+    events:
+      placed_block:
+        break:
+          drop_item:
+            item: stone_pebble_0
+            min_amount: 3
+            max_amount: 3
+            chance: 100
+  stone_pebble_3:
+    variant_of: stone_pebbles
+    graphics:
+      model: block/stone_pebble_3
+    events:
+      placed_block:
+        break:
+          drop_item:
+            item: stone_pebble_0
+            min_amount: 4
+            max_amount: 4
+            chance: 100
+  stone_pebble_4:
+    variant_of: stone_pebbles
+    graphics:
+      model: block/stone_pebble_4
+    events:
+      placed_block:
+        break:
+          drop_item:
+            item: stone_pebble_0
+            min_amount: 5
+            max_amount: 5
+            chance: 100
+
+  iaadditions_block: # Block that showcases the touch_damage behaviour.
+    name: ItemsAdder additions Block
+    graphics:
+      model: block/iaadditions_block
+    behaviours:
+      touch_damage:
+        amount: 1
+        interval: 40
+        fire_duration: 0
+        damage_when_sneaked: false
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          place:
+            name: minecraft:block.amethyst_block.place
+            pitch: 0.9
+          break:
+            name: minecraft:block.amethyst_block.break
+            pitch: 0.9
+          hit:
+            name: minecraft:block.amethyst_block.hit
+            pitch: 0.9
+          step:
+            name: minecraft:block.amethyst_block.step
+            pitch: 0.9
+            sound: 1.2
+    events:
+      placed_block:
+        interact:
+          play_sound:
+            name: minecraft:block.amethyst_block.chime
+            pitch: 0.9
+            volume: 1.2
+

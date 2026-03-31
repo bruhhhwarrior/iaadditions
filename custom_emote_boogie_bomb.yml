@@ -1,0 +1,18 @@
+info:
+  namespace: iaadditions
+emotes:
+  boogie_bomb:
+    id: boogie_bomb
+    cancel_conditions:
+      sneak: false
+      take_damage: true
+      deal_damage: false
+      in_air: false
+    hide_equipment:
+      helmet: false
+      mainhand: false
+      offhand: false
+    can_player_move: false
+    on_stop:
+      stop_sounds: true
+      skip_emote_end: true

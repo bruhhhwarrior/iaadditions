@@ -1,0 +1,118 @@
+info:
+  namespace: iaadditions
+
+items:
+  chair_template:
+    name: ""
+    graphics:
+      model: iaadditions:furniture/chair
+    template: true
+    behaviours:
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: false
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+      furniture_sit:
+        sit_height: 0.6
+  chair:
+    name: Chair
+    variant_of: chair_template
+    graphics:
+      model: iaadditions:furniture/chair
+    behaviours:
+      connectable:
+        default: iaadditions:chair
+        straight: iaadditions:chair_center
+        left: iaadditions:chair_left
+        right: iaadditions:chair_right
+        outer: iaadditions:chair_outer
+        inner: iaadditions:chair_inner
+  chair_center:
+    variant_of: chair_template
+    name: chair Center
+    graphics:
+      model: iaadditions:furniture/chair_center
+  chair_right:
+    variant_of: chair_template
+    name: chair Right
+    graphics:
+      model: iaadditions:furniture/chair_right
+  chair_outer:
+    variant_of: chair_template
+    name: chair Outer
+    graphics:
+      model: iaadditions:furniture/chair_outer
+  chair_left:
+    variant_of: chair_template
+    name: chair Left
+    graphics:
+      model: iaadditions:furniture/chair_left
+  chair_inner:
+    variant_of: chair_template
+    name: chair Inner
+    graphics:
+      model: iaadditions:furniture/chair_inner
+
+  table_template:
+    name: ""
+    graphics:
+      model: iaadditions:furniture/table
+    template: true
+    behaviours:
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: false
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  table:
+    name: Table
+    variant_of: table_template
+    graphics:
+      model: iaadditions:furniture/table
+    behaviours:
+      connectable:
+        type: table
+        default: iaadditions:table
+        middle: iaadditions:table_center
+        border: iaadditions:table_edge
+        corner: iaadditions:table_corner
+        end: iaadditions:table_end
+        straight: iaadditions:table_straight
+  table_center:
+    variant_of: table_template
+    name: Table Center
+    graphics:
+      model: iaadditions:furniture/table_center
+  table_edge:
+    variant_of: table_template
+    name: Table Edge
+    graphics:
+      model: iaadditions:furniture/table_edge
+  table_corner:
+    variant_of: table_template
+    name: Table Corner
+    graphics:
+      model: iaadditions:furniture/table_corner
+  table_end:
+    variant_of: table_template
+    name: Table End
+    graphics:
+      model: iaadditions:furniture/table_end
+  table_straight:
+    variant_of: table_template
+    name: Table Straight
+    graphics:
+      model: iaadditions:furniture/table_straight

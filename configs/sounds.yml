@@ -1,0 +1,14 @@
+info:
+  namespace: iaadditions
+
+minecraft_lang_overwrite:
+  my_lang_overwrite:
+    entries:
+      sound.boogie_bomb: "Boogie Bomb"
+    languages:
+    - ALL
+sounds:
+  boogie_bomb:
+    path: boogie_bomb
+    settings:
+      subtitle: sound.boogie_bomb
