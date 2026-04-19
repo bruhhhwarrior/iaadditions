@@ -1,7 +1,32 @@
 info:
   namespace: iaadditions
 
+entities:
+  globe:
+    model_folder: entity/globe
+    type: ARMOR_STAND
+    gravity: false
+    ai: false
+
 items:
+  globe:
+    name: "Globe"
+    graphics:
+      model: item/globe
+    behaviours:
+      complex_furniture:
+        entity: globe
+        solid: true
+        fixed_rotation: true
+        placement_offset:
+          floor: -0.5
+    events:
+      placed_furniture:
+        interact:
+          play_animation:
+            name: spin
+          actionbar:
+            text: "<white>📌 <bold>Location:</bold> <dark_gray>X:<gray>%player_x% <dark_gray>Y:<gray>%player_y% <dark_gray>Z:<gray>%player_z% <white>📌</white>"
   chair_template:
     name: ""
     graphics:
