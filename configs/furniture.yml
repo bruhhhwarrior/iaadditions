@@ -141,3 +141,78 @@ items:
     name: Table Straight
     graphics:
       model: iaadditions:furniture/table_straight
+
+  bed:
+    name: Bed
+    graphics:
+      model: iaadditions:furniture/bed
+    behaviours:
+      bed:
+        slots:
+        - 1,0,0
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: false
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+        hitbox:
+          height: 1
+          length: 2
+          width: 1
+          length_offset: 0.5
+  double_bed:
+    name: Double Bed
+    graphics:
+      model: iaadditions:furniture/double_bed
+    behaviours:
+      bed:
+        slots:
+        - 1,0,0
+        - 1,0,1
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: false
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+        hitbox:
+          height: 1
+          length: 2
+          width: 2
+          length_offset: 0.5
+  bunk_bed:
+    name: Bunk Bed
+    graphics:
+      model: iaadditions:furniture/bunk_bed
+    behaviours:
+      bed:
+        slots:
+        - 1,0,0
+        - 1,1,0
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: false
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+        hitbox:
+          height: 1
+          length: 2
+          width: 1
+          length_offset: 0.5

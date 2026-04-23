@@ -9,6 +9,9 @@ categories:
     items:
     - iaadditions:chair
     - iaadditions:table
+    - iaadditions:bed
+    - iaadditions:double_bed
+    - iaadditions:bunk_bed
     - iaadditions:iaadditions_block
     - iaadditions:stone_pebble_0
     - iaadditions:boogie_bomb
