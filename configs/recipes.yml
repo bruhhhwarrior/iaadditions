@@ -1,0 +1,53 @@
+info:
+  namespace: iaadditions
+
+recipes:
+  crafting:
+    chair:
+      pattern:
+        - "BBB"
+        - "AAA"
+        - "BBB"
+      ingredients:
+        A: "PURPLE_WOOL"
+        B: "#minecraft:planks"
+      result:
+        item: iaadditions:chair
+        amount: 1
+    globe:
+      pattern:
+        - "XAX"
+        - "BCX"
+        - "XDX"
+      ingredients:
+        A:
+          item: MAP
+          amount: 4
+        B: GOLD_INGOT
+        C: STICK
+        D: "#minecraft:wooden_slabs"
+      result:
+        item: iaadditions:globe
+        amount: 1
+    obsidian:
+      shapeless: true
+      ingredients:
+        A:
+          item: WATER_BUCKET
+          replacement: BUCKET
+        B: 
+          item: LAVA_BUCKET
+          replacement: BUCKET
+      result:
+        item: OBSIDIAN
+    cobblestone:
+      shapeless: true
+      ingredients:
+        A:
+          item: IRON_PICKAXE
+          damage: 1
+          ignore_durability: true
+        B: STONE
+      result:
+        item: COBBLESTONE
+        amount: 1

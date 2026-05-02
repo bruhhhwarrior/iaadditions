@@ -53,6 +53,7 @@ items:
       model: iaadditions:furniture/chair
     behaviours:
       connectable:
+        type: stair
         default: iaadditions:chair
         straight: iaadditions:chair_center
         left: iaadditions:chair_left
@@ -216,3 +217,59 @@ items:
           length: 2
           width: 1
           length_offset: 0.5
+
+  night_stand_closed:
+    name: Night Stand 
+    graphics:
+      model: furniture/night_stand_closed
+    behaviours:
+      storage:
+        type: storage
+        rows: 3
+        title: "Night Stand"
+        open_variant: night_stand_open
+        open_sound:
+          name: block.barrel.open
+          volume: 1.0 
+          pitch: 1.0 
+          category: MASTER 
+        close_sound:
+          name: block.barrel.close
+          volume: 1.0 
+          pitch: 1.0 
+          category: MASTER 
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: true
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+        hitbox:
+          height: 1
+          length: 1
+          width: 1
+  night_stand_open:
+    name: Night Stand 
+    graphics:
+      model: furniture/night_stand_open
+    behaviours:
+      furniture:
+        entity: item_display
+        display_transformation:
+          transform: HEAD
+        fixed_rotation: true
+        opposite_direction: true
+        solid: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+        hitbox:
+          height: 1
+          length: 1
+          width: 1
